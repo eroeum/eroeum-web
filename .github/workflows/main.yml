@@ -25,4 +25,4 @@ jobs:
       - name: Prepare and deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npm run ng -- deploy --base-href=/eroeum-web/ --name="Eric Roeum" --email="eroeum@gmail.com"
+        run: npm run ng -- deploy --repo=https://github.com/eroeum/eroeum-web.git --name="Eric Roeum" --email="eroeum@gmail.com"
